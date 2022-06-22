@@ -65,6 +65,7 @@ public class KafkaConfig {
         return new KafkaTemplate<>(producerFactory());
     }
 
+    @Bean
     public ReplyingKafkaTemplate<String, String, String> replyingKafkaTemplate(ProducerFactory<String, String> producerFactory,
                                                                                KafkaMessageListenerContainer kafkaMessageListenerContainer) {
         ReplyingKafkaTemplate template = new ReplyingKafkaTemplate<>(producerFactory, kafkaMessageListenerContainer);

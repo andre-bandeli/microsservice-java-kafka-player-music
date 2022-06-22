@@ -1,4 +1,4 @@
-package com.br.kafka.spring.boot.addmusic;
+package com.br.kafka.spring.boot.addmusic.model;
 
 
 import javax.validation.constraints.NotEmpty;

@@ -1,12 +1,15 @@
-package com.br.kafka.spring.boot.addmusic;
+package com.br.kafka.spring.boot.addmusic.service;
 
 
+import com.br.kafka.spring.boot.addmusic.model.MusicJson;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.producer.ProducerRecord;
 import org.apache.kafka.common.header.internals.RecordHeader;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.kafka.requestreply.ReplyingKafkaTemplate;
+import org.springframework.kafka.requestreply.RequestReplyFuture;
 import org.springframework.stereotype.Service;
 
 import java.nio.charset.StandardCharsets;

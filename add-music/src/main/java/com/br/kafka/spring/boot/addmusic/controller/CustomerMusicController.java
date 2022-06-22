@@ -1,6 +1,7 @@
-package com.br.kafka.spring.boot.addmusic;
+package com.br.kafka.spring.boot.addmusic.controller;
 
 
+import com.br.kafka.spring.boot.addmusic.model.MusicJson;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -14,8 +15,6 @@ import java.util.concurrent.ExecutionException;
 public class CustomerMusicController {
 
     public String addMusic(@PathVariable("uid") String uid, @RequestBody MusicJson musicJson) throws ExecutionException, InterruptedException, JsonProcessingException {
-
-        customerJson.set
 
         return "ok";
     }
