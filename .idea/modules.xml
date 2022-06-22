@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/add-music/add-music.iml" filepath="$PROJECT_DIR$/add-music/add-music.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/kafka-sound-music-spring-boot.iml" filepath="$PROJECT_DIR$/.idea/kafka-sound-music-spring-boot.iml" />
       <module fileurl="file://$PROJECT_DIR$/player_music/player_music.iml" filepath="$PROJECT_DIR$/player_music/player_music.iml" />
     </modules>
