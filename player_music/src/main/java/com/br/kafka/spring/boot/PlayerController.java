@@ -24,7 +24,7 @@ public class PlayerController {
     @ResponseBody
     public ResponseEntity<InputStreamResource> music() throws IOException {
 
-        File musicFile = ResourceUtils.getFile("classpath: mp3/music.mp3");
+        File musicFile = ResourceUtils.getFile("classpath:mp3/music.mp3");
         Long len = Files.size(Paths.get(musicFile.toURI()));
 
         MediaType mediaType = MediaType.parseMediaType("application/stream");
