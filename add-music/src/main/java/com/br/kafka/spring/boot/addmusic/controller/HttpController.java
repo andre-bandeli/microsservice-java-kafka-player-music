@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.concurrent.ExecutionException;
+
 @RestController
 @RequestMapping("/api")
 public class HttpController {
@@ -17,7 +19,7 @@ public class HttpController {
     private SaveMusicService saveMusicService;
 
     @PostMapping("/")
-    public String create(@RequestBody MusicJson musicJson) throws JsonProcessingException {
+    public String create(@RequestBody MusicJson musicJson) throws JsonProcessingException, ExecutionException, InterruptedException {
         return saveMusicService.execute(musicJson);
     }
 

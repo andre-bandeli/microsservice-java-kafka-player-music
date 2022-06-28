@@ -10,9 +10,12 @@ import org.apache.kafka.common.header.internals.RecordHeader;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.requestreply.ReplyingKafkaTemplate;
 import org.springframework.kafka.requestreply.RequestReplyFuture;
+import org.springframework.kafka.support.KafkaHeaders;
+import org.springframework.kafka.support.SendResult;
 import org.springframework.stereotype.Service;
 
 import java.nio.charset.StandardCharsets;
+import java.util.concurrent.ExecutionException;
 
 @Service
 public class SaveMusicService {
@@ -31,7 +34,7 @@ public class SaveMusicService {
         return requestReplyTopic;
     }
 
-    public String execute(MusicJson musicJson) throws JsonProcessingException {
+    public String execute(MusicJson musicJson) throws JsonProcessingException, ExecutionException, InterruptedException {
 
         // convert object to string
         ObjectMapper objectMapper = new ObjectMapper();
@@ -39,12 +42,12 @@ public class SaveMusicService {
 
         //build producer
         ProducerRecord<String, String> producerRecord = new ProducerRecord<>(requestTopic, jsonString);
-        producerRecord.headers().add(new RecordHeader(kafkaHeaders.REPLY_TOPIC, requestReplyTopic.getBytes(StandardCharsets.UTF_8)));
+        producerRecord.headers().add(new RecordHeader(KafkaHeaders.REPLY_TOPIC, requestReplyTopic.getBytes(StandardCharsets.UTF_8)));
 
         //send the message
         RequestReplyFuture<String, String, String> sendAndReceice = kafkaTemplate.sendAndReceive(producerRecord);
 
-        sendResult<String, String, String> sendAndReceive.getSendFuture().get();
+        SendResult<String, String> sendResult = sendAndReceice.getSendFuture().get();
         sendResult.getProducerRecord().headers().forEach(header -> System.out.println(header.key() + ":" + header.value().toString()));
         ConsumerRecord<String, String> consumerRecord = sendAndReceice.get();
 
