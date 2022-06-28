@@ -1,12 +1,17 @@
 package com.br.kafka.spring.boot.addmusic.model;
 
 
+import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
 
+@Entity
+@Table(name = "customer_jason")
 public class CustomerJson {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private String uid;
 
     @NotEmpty
