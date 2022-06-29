@@ -25,8 +25,9 @@ public class KafkaConfig {
 
     @Value("127.0.0.1:9092")
     private String bootstrapServers;
-    @Value("${kafka.topic.requestreply.topic}" )
+    @Value("${kafka.topic.requestreply-topic}")
     private String requestReplyTopic;
+    @Value("${kafka.consumergroup}")
     private String consumerGroup;
 
     @Bean

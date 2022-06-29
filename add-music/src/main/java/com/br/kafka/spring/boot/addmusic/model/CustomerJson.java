@@ -6,8 +6,6 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
 
-@Entity
-@Table(name = "customer_jason")
 public class CustomerJson {
 
     @Id

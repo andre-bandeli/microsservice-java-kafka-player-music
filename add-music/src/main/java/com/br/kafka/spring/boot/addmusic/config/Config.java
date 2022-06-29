@@ -2,6 +2,7 @@ package com.br.kafka.spring.boot.addmusic.config;
 
 
 import org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.task.AsyncTaskExecutor;
 import org.springframework.core.task.SimpleAsyncTaskExecutor;
@@ -11,12 +12,14 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 @Configuration
 public class Config extends WebMvcConfigurerAdapter {
 
+    @Override
     public void configureAsyncSupport(AsyncSupportConfigurer configurer) {
         configurer.setDefaultTimeout(-1);
         configurer.setTaskExecutor(asyncTaskExecutor());
     }
 
-    private AsyncTaskExecutor asyncTaskExecutor() {
+    @Bean
+    public AsyncTaskExecutor asyncTaskExecutor() {
         return new SimpleAsyncTaskExecutor("async");
     }
 }
