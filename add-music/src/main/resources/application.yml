@@ -1,8 +1,8 @@
 kafka:
-  bootstrap-servers: localhost:9092
+  bootstrap-servers: 127.0.0.1:9092
   topic.request-topic: requesttopic2
   topic.requestreply-topic: replytopic2
-  consumergroup: requestreplymusicgroup
+  consumergroup: requestreplygroup
 
 spring:
   application:
@@ -26,6 +26,6 @@ spring:
     bootstrap-servers: 127.0.0.1:9092
     client-id: music-producer
     consumer:
-      group-id: requestreplymusicgroup
+      group-id: requestreplygroup
       auto-offset-reset: earliest
       enable-auto-commit: false
