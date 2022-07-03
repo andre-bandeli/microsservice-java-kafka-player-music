@@ -5,26 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f4f550f-3ddf-487b-84d0-6d91b1e31429" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/music-add-service/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music-upload-api/src/main/java/com/br/kafkaspotfy/musicuploadapi/controller/MusicCOntroller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music-upload-api/src/main/java/com/br/kafkaspotfy/musicuploadapi/model/MusicUploadJson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music-upload-api/src/main/java/com/br/kafkaspotfy/musicuploadapi/service/UploadMusicService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music-upload-api/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music-upload-api/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-save-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/customer-save-api/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-save-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/customer-save-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-save-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer-save-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/music-add-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/music-add-api/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/music-add-api/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/music-add-api/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/music-add-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/music-add-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/player_music/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/player_music/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,14 +109,7 @@
       <recent name="$PROJECT_DIR$/" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="configurationTypes">
-      <set>
-        <option value="SpringBootApplicationConfigurationType" />
-      </set>
-    </option>
-  </component>
-  <component name="RunManager" selected="Spring Boot.MusicAddServiceApplication">
+  <component name="RunManager" selected="Spring Boot.MusicUploadApiApplication">
     <configuration name="AddMusicApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="add-music" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.br.kafka.spring.boot.addmusic.AddMusicApplication" />
@@ -155,6 +134,13 @@
     <configuration name="MusicAddApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="music-add-api" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.br.kafkaspotfy.musicaddapi.MusicAddApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MusicAddServiceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="music-add-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.br.kafkaspotfy.musicaddservice.MusicAddServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -242,7 +228,7 @@
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SpringBeansView">
-    <option name="showFilesets" value="false" />
+    <option name="showFiles" value="false" />
     <option name="showImplicitBeans" value="false" />
     <option name="showInfrastructureBeans" value="false" />
   </component>
@@ -264,7 +250,7 @@
       <workItem from="1656814407464" duration="4279000" />
       <workItem from="1656818912574" duration="16401000" />
       <workItem from="1656852264169" duration="285000" />
-      <workItem from="1656852696732" duration="1948000" />
+      <workItem from="1656852696732" duration="4238000" />
     </task>
     <servers />
   </component>

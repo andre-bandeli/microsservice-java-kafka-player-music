@@ -10,6 +10,7 @@
         <module name="customer-save-api" />
         <module name="music-add-api" />
         <module name="customer-save-service" />
+        <module name="music-add-service" />
         <module name="player_music" />
         <module name="music-upload-api" />
       </profile>
