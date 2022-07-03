@@ -1,38 +1,38 @@
 package com.br.kafkaspotfy.customersaveservice.model;
 
 import lombok.Builder;
+import org.hibernate.validator.constraints.NotEmpty;
+import org.springframework.data.annotation.Id;
 
-import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.validation.constraints.NotEmpty;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.validation.constraints.NotNull;
-import java.util.UUID;
 
-@Table
 @Builder
-public class Customer {
+public class CustomerJson {
 
-    @Id()
-    private UUID id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    private String uid;
 
-    @NotNull
     @NotEmpty
+    @NotNull
     private String name;
 
     @NotEmpty
     @NotNull
     private String country;
 
-    @NotNull
     @NotEmpty
+    @NotNull
     private String musicStyle;
 
-    public UUID getId() {
-        return id;
+    public String getUid() {
+        return uid;
     }
 
-    public void setId(UUID id) {
-        this.id = id;
+    public void setUid(String uid) {
+        this.uid = uid;
     }
 
     public String getName() {
@@ -59,3 +59,4 @@ public class Customer {
         this.musicStyle = musicStyle;
     }
 }
+
