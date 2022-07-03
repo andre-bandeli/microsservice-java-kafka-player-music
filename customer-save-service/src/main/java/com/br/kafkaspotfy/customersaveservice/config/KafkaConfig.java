@@ -1,11 +1,12 @@
 package com.br.kafkaspotfy.customersaveservice.config;
 
-import com.fasterxml.jackson.databind.ser.std.StringSerializer;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
+import org.apache.kafka.common.serialization.StringSerializer;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.config.ConcurrentKafkaListenerContainerFactory;
 import org.springframework.kafka.config.KafkaListenerContainerFactory;
 import org.springframework.kafka.core.*;
@@ -18,13 +19,14 @@ import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
 
+@Configuration
 public class KafkaConfig {
 
     /*
      * bootstrap. servers is a comma-separated list of host and port pairs that are the addresses of the
      * Kafka brokers in a "bootstrap" Kafka cluster that a Kafka client connects to initially to bootstrap itself.
      * */
-    @Value("127.0.0.1:9092")
+    @Value("127.0.0.1:29092")
     private String bootstrapServers;
     @Value("${kafka.topic.requestreply-topic}")
     private String requestReplyTopic;

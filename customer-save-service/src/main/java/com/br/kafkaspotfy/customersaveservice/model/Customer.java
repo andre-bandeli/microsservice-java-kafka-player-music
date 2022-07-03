@@ -1,18 +1,25 @@
 package com.br.kafkaspotfy.customersaveservice.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import java.util.UUID;
 
+@Entity
 @Table
 @Builder
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Customer {
 
-    @Id()
+    @javax.persistence.Id
+    @Column(name = "id", nullable = false)
     private UUID id;
 
     @NotNull

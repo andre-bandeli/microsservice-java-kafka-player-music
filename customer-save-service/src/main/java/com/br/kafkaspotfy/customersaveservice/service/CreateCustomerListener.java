@@ -26,10 +26,11 @@ public class CreateCustomerListener {
         CustomerJson customerJson = objectMapper.readValue(json, CustomerJson.class);
 
         UUID uuid = createCustomerService.execute(Customer.
-                        builder().country(customerJson.
-                        getCountry()).
+                        builder().
+                        country(customerJson.getCountry()).
                         musicStyle(customerJson.getMusicStyle()).
-                        name(customerJson.getName()).build()
+                        name(customerJson.getName()).
+                        build()
         );
         customerJson.setUid(uuid.toString());
         return objectMapper.writeValueAsString(customerJson);

@@ -1,18 +1,25 @@
 package com.br.kafkaspotfy.customersaveservice.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.data.annotation.Id;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
+import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
+@Entity
+@Table
 @Builder
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class CustomerJson {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @javax.persistence.Id
+    @Column(name = "id", nullable = false)
     private String uid;
 
     @NotEmpty
