@@ -5,19 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f4f550f-3ddf-487b-84d0-6d91b1e31429" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/music-add-service/src/main/java/com/br/kafkaspotfy/musicaddservice/config/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music-add-service/src/main/java/com/br/kafkaspotfy/musicaddservice/config/KafkaConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music-add-service/src/main/java/com/br/kafkaspotfy/musicaddservice/model/Music.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music-add-service/src/main/java/com/br/kafkaspotfy/musicaddservice/repository/MusicRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music-add-service/src/main/java/com/br/kafkaspotfy/musicaddservice/repository/MusicStatusEnums.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music-add-service/src/main/java/com/br/kafkaspotfy/musicaddservice/service/CreateMusicListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/music-add-service/src/main/java/com/br/kafkaspotfy/musicaddservice/service/CreateMusicService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music-add-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music-upload-api/src/main/java/com/br/kafkaspotfy/musicuploadapi/controller/MusicCOntroller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music-upload-api/src/main/java/com/br/kafkaspotfy/musicuploadapi/model/MusicUploadJson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music-upload-api/src/main/java/com/br/kafkaspotfy/musicuploadapi/service/UploadMusicService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music-upload-api/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music-upload-api/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/music-add-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/music-add-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/music-add-service/src/main/java/com/br/musicaddservice/MusicAddServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-save-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/customer-save-api/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-save-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/customer-save-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-save-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer-save-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music-add-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/music-add-api/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music-add-api/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/music-add-api/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music-add-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/music-add-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/player_music/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/player_music/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +35,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -40,6 +47,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
@@ -53,7 +61,7 @@
       <map>
         <entry key="com.haulmont.jpb.jpaInspector" value="true" />
         <entry key="com.haulmont.jpb.jpaPalette" value="false" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
   </component>
@@ -74,6 +82,7 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
@@ -91,10 +100,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "openjdk-18",
-    "last_opened_file_path": "/home/bandeli/Documentos/Projetos Git/kafka-sound-music-spring-boot/music-add-service/src/main/java/com/br/kafkaspotfy/musicaddservice",
+    "last_opened_file_path": "/home/bandeli/Documentos/Projetos Git/kafka-sound-music-spring-boot/music-upload-api/src/main/resources",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "MavenSettings",
-    "spring.configuration.checksum": "4b3aa642b55aafd5de1daffe4dc4ec7b"
+    "spring.configuration.checksum": "f99e4adce9c73ca5417fe3340d1e91ba"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -104,6 +113,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/music-upload-api/src/main/resources" />
+      <recent name="$PROJECT_DIR$/music-add-service/src/main/resources" />
       <recent name="$PROJECT_DIR$/music-add-service/src/main/java/com/br/kafkaspotfy/musicaddservice" />
       <recent name="$PROJECT_DIR$/music-add-api/src/main/resources" />
       <recent name="$PROJECT_DIR$/music-add-api/src/main/java/com/br/kafkaspotfy/musicaddapi" />
@@ -119,7 +130,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.PlayerMusicApplication">
+  <component name="RunManager" selected="Spring Boot.MusicAddServiceApplication">
     <configuration name="AddMusicApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="add-music" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.br.kafka.spring.boot.addmusic.AddMusicApplication" />
@@ -149,8 +160,15 @@
       </method>
     </configuration>
     <configuration name="MusicAddServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="music-add-service" />
+      <option name="ACTIVE_PROFILES" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.br.kafkaspotfy.musicaddservice.MusicAddServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MusicUploadApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="music-upload-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.br.kafkaspotfy.musicuploadapi.MusicUploadApiApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -244,7 +262,9 @@
       <workItem from="1656496473465" duration="2458000" />
       <workItem from="1656739094081" duration="7073000" />
       <workItem from="1656814407464" duration="4279000" />
-      <workItem from="1656818912574" duration="14542000" />
+      <workItem from="1656818912574" duration="16401000" />
+      <workItem from="1656852264169" duration="285000" />
+      <workItem from="1656852696732" duration="1948000" />
     </task>
     <servers />
   </component>

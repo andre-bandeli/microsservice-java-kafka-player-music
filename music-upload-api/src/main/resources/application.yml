@@ -1,13 +1,13 @@
 
 kafka:
   bootstrap-servers: 127.0.0.1:9092
-  topic.request-topic: requesttopicmusic
-  topic.requestreply-topic: replytopicmusic
-  consumergroup: requestreplymusicgroup
+  topic.request-topic: requesttopicmusic_upload
+  topic.requestreply-topic: replytopicmusic_upload
+  consumergroup: requestreplymusicgorup_upload
 
 spring:
   application:
-    name: music-producer
+    name: music-upload-api
     datasource:
       driverClassName: com.mysql.jdbc.Driver
       url: jdbc:mysql://localhost:3306/kafka

@@ -10,8 +10,8 @@
         <module name="customer-save-api" />
         <module name="music-add-api" />
         <module name="customer-save-service" />
-        <module name="music-add-service" />
         <module name="player_music" />
+        <module name="music-upload-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -20,6 +20,7 @@
       <module name="customer-save-service" target="11" />
       <module name="music-add-api" target="11" />
       <module name="music-add-service" target="11" />
+      <module name="music-upload-api" target="11" />
       <module name="player_music" target="11" />
     </bytecodeTargetLevel>
   </component>
@@ -30,6 +31,7 @@
       <module name="customer-save-service" options="-parameters" />
       <module name="music-add-api" options="-parameters" />
       <module name="music-add-service" options="-parameters" />
+      <module name="music-upload-api" options="-parameters" />
       <module name="player_music" options="-parameters" />
     </option>
   </component>

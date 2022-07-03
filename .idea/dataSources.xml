@@ -15,5 +15,14 @@
       <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="customer-save-service/Hibernate" uuid="03414fe4-1a37-4d1b-bfd7-8b9beea4de04">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>Hibernate</remarks>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/topics?allowPublicKeyRetrieval=true&amp;rewriteBatchedStatements=true&amp;useSSL=false&amp;useUnicode=yes&amp;characterEncoding=UTF-8&amp;useLegacyDatetimeCode=true&amp;createDatabaseIfNotExist=true&amp;useTimezone=true&amp;serverTimezone=UTC</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
