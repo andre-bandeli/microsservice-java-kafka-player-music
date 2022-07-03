@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/add-music/customer-save-api/customer-save-api.iml" filepath="$PROJECT_DIR$/add-music/customer-save-api/customer-save-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customer-save-service/customer-save-service.iml" filepath="$PROJECT_DIR$/customer-save-service/customer-save-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/music-add-api/music-add-api.iml" filepath="$PROJECT_DIR$/music-add-api/music-add-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/music-add-api/music-add-service/music-add-service.iml" filepath="$PROJECT_DIR$/music-add-api/music-add-service/music-add-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/player_music/player_music.iml" filepath="$PROJECT_DIR$/player_music/player_music.iml" />
+    </modules>
+  </component>
+</project>
