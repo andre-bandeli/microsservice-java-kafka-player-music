@@ -5,7 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f4f550f-3ddf-487b-84d0-6d91b1e31429" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/customer-save-service/src/test/java/com/br/kafkaspotfy/customersaveservice/CustomerSaveServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music-add-service/src/main/java/com/br/kafkaspotfy/musicaddservice/config/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music-add-service/src/main/java/com/br/kafkaspotfy/musicaddservice/config/KafkaConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music-add-service/src/main/java/com/br/kafkaspotfy/musicaddservice/model/Music.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music-add-service/src/main/java/com/br/kafkaspotfy/musicaddservice/repository/MusicRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music-add-service/src/main/java/com/br/kafkaspotfy/musicaddservice/repository/MusicStatusEnums.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music-add-service/src/main/java/com/br/kafkaspotfy/musicaddservice/service/CreateMusicListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/music-add-service/src/main/java/com/br/kafkaspotfy/musicaddservice/service/CreateMusicService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music-add-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/music-add-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music-add-service/src/main/java/com/br/musicaddservice/MusicAddServiceApplication.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +27,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -77,7 +91,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "openjdk-18",
-    "last_opened_file_path": "/home/bandeli/Documentos/Projetos Git/kafka-sound-music-spring-boot/music-add-api/src/main/resources",
+    "last_opened_file_path": "/home/bandeli/Documentos/Projetos Git/kafka-sound-music-spring-boot/music-add-service/src/main/java/com/br/kafkaspotfy/musicaddservice",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "MavenSettings",
     "spring.configuration.checksum": "4b3aa642b55aafd5de1daffe4dc4ec7b"
@@ -90,6 +104,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/music-add-service/src/main/java/com/br/kafkaspotfy/musicaddservice" />
       <recent name="$PROJECT_DIR$/music-add-api/src/main/resources" />
       <recent name="$PROJECT_DIR$/music-add-api/src/main/java/com/br/kafkaspotfy/musicaddapi" />
     </key>
@@ -129,6 +144,13 @@
     <configuration name="MusicAddApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="music-add-api" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.br.kafkaspotfy.musicaddapi.MusicAddApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MusicAddServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="music-add-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.br.kafkaspotfy.musicaddservice.MusicAddServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -222,7 +244,7 @@
       <workItem from="1656496473465" duration="2458000" />
       <workItem from="1656739094081" duration="7073000" />
       <workItem from="1656814407464" duration="4279000" />
-      <workItem from="1656818912574" duration="12282000" />
+      <workItem from="1656818912574" duration="14542000" />
     </task>
     <servers />
   </component>
