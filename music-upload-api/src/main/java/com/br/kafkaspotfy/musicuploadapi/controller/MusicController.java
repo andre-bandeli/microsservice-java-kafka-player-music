@@ -12,7 +12,7 @@ import java.io.IOException;
 
 @RestController
 @RequestMapping("/v1")
-public class MusicCOntroller {
+public class MusicController {
 
     @Autowired
     private UploadMusicService uploadMusicService;

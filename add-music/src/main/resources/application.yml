@@ -1,5 +1,5 @@
 kafka:
-  bootstrap-servers: 127.0.0.1:9092
+  bootstrap-servers: 127.0.0.1:9090
   topic.request-topic: requesttopic2
   topic.requestreply-topic: replytopic2
   consumergroup: requestreplygroup

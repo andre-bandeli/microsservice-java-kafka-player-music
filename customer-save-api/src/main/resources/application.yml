@@ -1,32 +1,24 @@
 
 kafka:
-    bootstrap-servers: 127.0.0.1:9092
-    topic.request-topic: requesttopic2
-    topic.requestreply-topic: replytopic2
-    consumergroup: requestreplygroup
+  bootstrap-servers: 127.0.0.1:9090
+  topic.request-topic: requesttopic2
+  topic.requestreply-topic: replytopic2
+  consumergroup: requestreplygorup
 
 spring:
   application:
-    name: music-producer
-    datasource:
-        driverClassName: com.mysql.jdbc.Driver
-        url: jdbc:mysql://localhost:3306/kafka
-        username: root
-        password: root
-    jpa:
-        hibernate.ddl-auto: update
-        generate-ddl: true
-        show-sql: true
-    kafka:
-        producer:
-            max:
-              request:
-                size: 231072000
-            batch-size: 60000000
-            buffer-memory: 60000000
-        bootstrap-servers: 127.0.0.1:9092
-        client-id: music-producer
-        consumer:
-            group-id: requestreplygroup
-            auto-offset-reset: earliest
-            enable-auto-commit: false
+    name: producer
+
+  kafka:
+    producer:
+      max:
+        request:
+          size: 231072000
+      batch-size: 60000000
+      buffer-memory: 60000000
+    bootstrap-servers: 127.0.0.1:9090
+    client-id: producer
+    consumer:
+      group-id: requestreplygorup
+      auto-offset-reset: earliest
+      enable-auto-commit: false

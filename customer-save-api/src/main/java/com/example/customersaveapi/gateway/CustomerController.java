@@ -1,4 +1,4 @@
-package com.example.customersaveapi.controller;
+package com.example.customersaveapi.gateway;
 
 import com.example.customersaveapi.model.CustomerJson;
 import com.example.customersaveapi.service.SaveCustomerService;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.concurrent.ExecutionException;
 
 @RestController
-@RequestMapping("/v1")
+@RequestMapping("gateway/v1")
 public class CustomerController {
 
     @Autowired
