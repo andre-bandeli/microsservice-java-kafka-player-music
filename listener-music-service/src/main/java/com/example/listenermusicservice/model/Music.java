@@ -7,11 +7,14 @@ import lombok.Data;
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.context.annotation.Primary;
 
+import javax.persistence.Entity;
 import javax.persistence.PrimaryKeyJoinColumn;
+import javax.persistence.Table;
 import java.util.UUID;
 
 @Data
 @Builder
+@Table
 public class Music {
 
     @PrimaryKeyJoinColumn
