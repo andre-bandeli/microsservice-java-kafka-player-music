@@ -31,12 +31,15 @@ public class Music {
 
     private long size;
 
-    public Music(UUID id, String name, String status, String uuidCustomer, long size) {
+    private String path;
+
+    public Music(UUID id, String name, String status, String uuidCustomer, long size, String path) {
         this.id = id;
         this.name = name;
         this.status = status;
         this.uuidCustomer = uuidCustomer;
         this.size = size;
+        this.path = path;
     }
 
     public UUID getId() {
@@ -77,5 +80,13 @@ public class Music {
 
     public void setSize(long size) {
         this.size = size;
+    }
+
+    public String getPath() {
+        return path;
+    }
+
+    public void setPath(String path) {
+        this.path = path;
     }
 }
