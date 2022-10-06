@@ -26,7 +26,7 @@ public class KafkaConfig {
      * bootstrap. servers is a comma-separated list of host and port pairs that are the addresses of the
      * Kafka brokers in a "bootstrap" Kafka cluster that a Kafka client connects to initially to bootstrap itself.
      * */
-    @Value("127.0.0.1:29092")
+    @Value("127.0.0.1:9092")
     private String bootstrapServers;
     @Value("${kafka.topic.requestreply-topic}")
     private String requestReplyTopic;

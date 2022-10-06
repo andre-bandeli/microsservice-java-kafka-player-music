@@ -11,7 +11,7 @@ import java.util.UUID;
 @Service
 public class CreateMusicService {
 
-    @Autowired
+    @Autowired(required = false)
     private MusicRepository musicRepository;
 
     public UUID execute(Music music) {

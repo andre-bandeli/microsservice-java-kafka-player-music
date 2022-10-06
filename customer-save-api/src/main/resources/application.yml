@@ -1,6 +1,6 @@
 
 kafka:
-  bootstrap-servers: 127.0.0.1:9090
+  bootstrap-servers: 127.0.0.1:9092
   topic.request-topic: requesttopic2
   topic.requestreply-topic: replytopic2
   consumergroup: requestreplygorup
@@ -16,7 +16,7 @@ spring:
           size: 231072000
       batch-size: 60000000
       buffer-memory: 60000000
-    bootstrap-servers: 127.0.0.1:9090
+    bootstrap-servers: 127.0.0.1:9092
     client-id: producer
     consumer:
       group-id: requestreplygorup

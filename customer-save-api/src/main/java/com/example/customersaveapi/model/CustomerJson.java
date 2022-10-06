@@ -1,10 +1,10 @@
 package com.example.customersaveapi.model;
 
 import org.hibernate.validator.constraints.NotEmpty;
-import org.springframework.data.annotation.Id;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 
 
