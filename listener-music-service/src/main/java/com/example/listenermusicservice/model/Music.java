@@ -4,10 +4,12 @@ package com.example.listenermusicservice.model;
 import com.sun.istack.NotNull;
 import lombok.Builder;
 import lombok.Data;
+import org.hibernate.mapping.PrimaryKey;
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.context.annotation.Primary;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 import java.util.UUID;
@@ -17,7 +19,7 @@ import java.util.UUID;
 @Table
 public class Music {
 
-    @PrimaryKeyJoinColumn
+    @Id()
     private UUID id;
 
     @NotNull
